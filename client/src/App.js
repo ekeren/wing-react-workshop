@@ -63,4 +63,12 @@ const FormComponent = () => {
   );
 };
 ​
-export default FormComponent;
+function App() {
+  return (
+    <div className="App">
+      <h1>React Form App</h1>
+      <FormComponent />
+    </div>
+  );
+}
+export default App;
