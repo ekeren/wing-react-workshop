@@ -3,7 +3,7 @@ bring cloud;
 bring http;
 
 let bucket = new cloud.Bucket();
-bucket.addObject("title", "default bucket title");
+bucket.addObject("title.txt", "default bucket title");
 
 let api = new cloud.Api(
   cors: true
@@ -13,7 +13,7 @@ api.get("/title", inflight () => {
   log("Someone called me");
   return {
     status: 200,
-    body: bucket.get("title")
+    body: bucket.get("title.txt")
   };
 });
 
