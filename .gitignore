@@ -1,4 +1,5 @@
 .DS_Store
+build/
 backend/target
 node_modules
 client/public/wing.js
